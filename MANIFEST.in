@@ -1,0 +1,9 @@
+# Include the README
+include *.md
+
+# Include the license file
+include LICENSE.txt
+
+# Include html templates and static files
+recursive-include tabler/templates *
+recursive-include tabler/static *
