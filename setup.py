@@ -15,8 +15,8 @@ setup(
     url='https://github.com/rbennett91/django-tabler',
     author='Ryan Bennett',
     author_email='ryan.bennett@outlook.com',
-    packages=[
-        'tabler',
-    ],
     install_requires=[],
+    packages=find_packages(),
+    include_package_data=True,
+    zip_safe=False,
 )

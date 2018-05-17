@@ -5,5 +5,5 @@ include *.md
 include LICENSE.txt
 
 # Include html templates and static files
-recursive-include tabler/templates *
-recursive-include tabler/static *
+recursive-include django_tabler/templates *
+recursive-include django_tabler/static *
