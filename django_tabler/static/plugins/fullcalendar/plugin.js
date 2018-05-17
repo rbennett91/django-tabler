@@ -3,7 +3,7 @@ require.config({
         'fullcalendar': ['moment', 'jquery'],
     },
     paths: {
-        'fullcalendar': 'static/plugins/fullcalendar/js/fullcalendar.min',
-        'moment': 'static/plugins/fullcalendar/js/moment.min',
+        'fullcalendar': 'assets/plugins/fullcalendar/js/fullcalendar.min',
+        'moment': 'assets/plugins/fullcalendar/js/moment.min',
     }
 });
