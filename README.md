@@ -2,8 +2,8 @@
 
 This project transforms the [Tabler](https://github.com/tabler/tabler) dashboard
 into a Django package. It provides an extensible base template, error page templates,
-account management templates, and the necessary static assets. django-tabler is based
-on the latest Tabler release [v0.0.32](https://github.com/tabler/tabler/releases/tag/v0.0.32).
+and the necessary static assets. django-tabler is based on the latest Tabler
+release [v0.0.32](https://github.com/tabler/tabler/releases/tag/v0.0.32).
 
 # Installation
 * pip install git+https://github.com/rbennett91/django-tabler
