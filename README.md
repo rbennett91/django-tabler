@@ -10,10 +10,10 @@ release [v0.0.32](https://github.com/tabler/tabler/releases/tag/v0.0.32).
 * Add `django_tabler` to your `INSTALLED_APPS`
 
 # Usage
-The base template adds your site's name to the browser's titlebar using Django's
+django-tabler's [base template](https://github.com/rbennett91/django-tabler/blob/master/django_tabler/templates/django_tabler/base.html) adds your site's name to the browser's titlebar using Django's
 [Sites](https://docs.djangoproject.com/en/1.11/ref/contrib/sites/) framework.
 Follow these steps for setup:
-* Add `SITE_ID` value to Django settings
+* Add a `SITE_ID` value to Django settings
 * Add `'django.contrib.sites'` to `INSTALLED_APPS`
 * Add `'django.contrib.sites.middleware.CurrentSiteMiddleware'` to `MIDDLE_WARE`
 * Run `python manage.py migrate` if necessary
@@ -22,8 +22,7 @@ value with an appropriate name and domain. A custom migration might be helpful.
 
 
 Once installed, templates inside your application can extend django-tabler's
-[base template](https://github.com/rbennett91/django-tabler/blob/master/django_tabler/templates/django_tabler/base.html).
-A quick example:
+base template. A quick example:
 ```
 {% extends "django_tabler/base.html" %}
 
