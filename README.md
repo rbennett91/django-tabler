@@ -6,7 +6,7 @@ and the necessary static assets. django-tabler is based on the latest Tabler
 release [v0.0.32](https://github.com/tabler/tabler/releases/tag/v0.0.32).
 
 # Installation
-* pip install git+https://github.com/rbennett91/django-tabler
+* `pip install git+https://github.com/rbennett91/django-tabler`
 * Add `django_tabler` to your `INSTALLED_APPS`
 
 # Usage
