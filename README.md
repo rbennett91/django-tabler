@@ -21,6 +21,10 @@ Follow these steps for setup:
 value with an appropriate name and domain. A custom migration might be helpful.
 
 
+To load a favicon, create an `img/` folder inside your application's `static` directory.
+Place `favicon.ico` inside, and the icon will be loaded by the base template.
+
+
 Once installed, templates inside your application can extend django-tabler's
 base template. A quick example:
 ```
