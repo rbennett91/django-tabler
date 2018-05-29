@@ -39,11 +39,11 @@ provided by the original project.
 django-tabler's base template adds your site's name to the browser's titlebar using Django's
 [Sites](https://docs.djangoproject.com/en/1.11/ref/contrib/sites/) framework.
 Follow these steps for setup:
-* Add a `SITE_ID` value to Django settings
+* Add a `SITE_ID` value to your application's settings file
 * Add `'django.contrib.sites'` to `INSTALLED_APPS`
 * Add `'django.contrib.sites.middleware.CurrentSiteMiddleware'` to `MIDDLE_WARE`
 * Run `python manage.py migrate` if necessary
-* Inside your application's `django-site` database table, update the record that cooresponds to the `SITE_ID`
+* Inside your application's `django_site` database table, update the record that cooresponds to the `SITE_ID`
 value with an appropriate name and domain. A custom migration might be helpful.
 
 
