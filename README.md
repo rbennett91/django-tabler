@@ -10,23 +10,8 @@ release [v0.0.32](https://github.com/tabler/tabler/releases/tag/v0.0.32).
 * Add `django_tabler` to your `INSTALLED_APPS`
 
 # Usage
-django-tabler's [base template](https://github.com/rbennett91/django-tabler/blob/master/django_tabler/templates/django_tabler/base.html) adds your site's name to the browser's titlebar using Django's
-[Sites](https://docs.djangoproject.com/en/1.11/ref/contrib/sites/) framework.
-Follow these steps for setup:
-* Add a `SITE_ID` value to Django settings
-* Add `'django.contrib.sites'` to `INSTALLED_APPS`
-* Add `'django.contrib.sites.middleware.CurrentSiteMiddleware'` to `MIDDLE_WARE`
-* Run `python manage.py migrate` if necessary
-* Update the `django-site` database record that cooresponds to the `SITE_ID`
-value with an appropriate name and domain. A custom migration might be helpful.
-
-
-To load a favicon, create an `img/` folder inside your application's `static` directory.
-Place `favicon.ico` inside, and the icon will be loaded by the base template.
-
-
 Once installed, templates inside your application can extend django-tabler's
-base template. A quick example:
+[base template](https://github.com/rbennett91/django-tabler/blob/master/django_tabler/templates/django_tabler/base.html). A quick example:
 ```
 {% extends "django_tabler/base.html" %}
 
@@ -46,12 +31,28 @@ base template. A quick example:
 </script
 {% endblock extra_js %}
 ```
-
-
 Need some inspiration? Check out the [templates](https://github.com/tabler/tabler/tree/dev/dist)
 provided by the original project.
 
 
+### Missing a title in the browser window?
+django-tabler's base template adds your site's name to the browser's titlebar using Django's
+[Sites](https://docs.djangoproject.com/en/1.11/ref/contrib/sites/) framework.
+Follow these steps for setup:
+* Add a `SITE_ID` value to Django settings
+* Add `'django.contrib.sites'` to `INSTALLED_APPS`
+* Add `'django.contrib.sites.middleware.CurrentSiteMiddleware'` to `MIDDLE_WARE`
+* Run `python manage.py migrate` if necessary
+* Inside your application's `django-site` database table, update the record that cooresponds to the `SITE_ID`
+value with an appropriate name and domain. A custom migration might be helpful.
+
+
+### Missing a favicon?
+To load a favicon, create an `img/` folder inside your application's `static` directory.
+Place `favicon.ico` inside, and the icon will be loaded by the base template.
+
+
+### Custom error views
 django-tabler overrides Django's [default error views](https://docs.djangoproject.com/en/1.11/topics/http/views/#customizing-error-views)
 by rendering a custom error template. Your application can access these by
 adding the following to your applications' `urls.py` file:
