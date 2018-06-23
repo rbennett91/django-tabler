@@ -7,7 +7,7 @@ release [v0.0.32](https://github.com/tabler/tabler/releases/tag/v0.0.32).
 
 # Installation
 django-tabler was built with Python 3.6 and Django 1.11. Other versions should be compatible, but they haven't been tested. To install:
-* `pip install git+https://github.com/rbennett91/django-tabler`
+* `pip install django-tabler`
 * Add `django_tabler` to your `INSTALLED_APPS`
 
 # Usage
